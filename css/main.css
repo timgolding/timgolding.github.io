@@ -1,0 +1,318 @@
+body{
+	background-image:url('../images/background.jpg');
+	font-family: 'Lato', sans-serif;
+	background-size:contain;
+	font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2{
+	color:white;
+	margin-bottom:0;
+}
+
+.vertical-align-child{
+	display: table;
+	vertical-align: middle;
+	height:120px;
+}
+
+.vertical-align-child div{
+	display: table-cell;
+	    vertical-align: middle;
+}
+
+header h2{
+	color:#74838d;
+	margin:0;
+	margin-bottom:.5em;
+	letter-spacing: 2px;
+}
+
+header .navbar{
+	background-color:rgba(14, 23, 26, 0.5);
+
+}
+
+header img.me{
+	width:130px;
+	height:auto;
+	position:absolute;
+}
+
+
+
+section{
+	position: relative;
+}
+
+header ul#desktop_menu{
+	padding-top:25px;
+}
+
+header ul li{
+	font-size: 18px;
+	line-height: 26px;
+	display:inline-block !important;
+}
+
+header ul#mobile_menu li{
+	font-size:16px;
+}
+
+header ul li a:hover{
+	color:white !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color:#eee !important;
+}
+
+@media (min-width: 768px){
+.navbar-nav {
+	margin: 7.5px -15px;
+}
+}
+
+
+.main-content{
+	max-width:784px;
+	margin-top:250px;
+}
+
+
+.main-content p{
+	color:white;
+}
+
+.main-content h2{
+	color:white;
+	margin-bottom:1em;
+}
+
+.scrollTo{
+	cursor: pointer;
+	position: absolute;
+	top:-15px;
+	left:50%;
+	z-index: 25;
+	color:silver;
+	font-size:16px;
+	padding-top:3px;
+	padding-left:1px;
+	background-color:black;
+	border:3px solid #f0ce74;
+	border-radius:12.5px;
+	width:25px;
+	height: 25px;
+	-webkit-box-shadow: 2px 2px 1px -2px rgba(158,155,158,1);
+    -moz-box-shadow:2px 2px 1px -2px rgba(158,155,158,1);
+    box-shadow: 2px 2px 1px -2px rgba(158,155,158,1);
+}
+
+
+section.technologies{
+	background:white;
+	padding-top:30px;
+	padding-bottom:30px;
+	margin-top:100px;
+	text-align:center;
+}
+
+
+section.technologies{
+	text-align:center;
+}
+
+section.technologies h3{
+	margin:2em 0;
+}
+
+section.technologies .container div.grid-contain{	
+	text-align:center;
+	width:100%;
+	padding-bottom:30px;
+}
+
+.grid{
+	margin:0 auto;
+}
+
+.grid-item{
+	text-align:center;
+	border:1px solid silver;
+	width:200px;
+	margin-top:10px;
+	margin-bottom:10px;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(158,155,158,1);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(158,155,158,1);
+    box-shadow: 10px 10px 5px -6px rgba(158,155,158,1);
+    margin-left:25px;
+}
+
+.grid-item:hover{
+	-ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+
+}
+
+.grid-item img{
+	margin:10px;
+}
+
+section#portfolio{
+	background-image:url('../images/photo-1429051883746-afd9d56fbdaf.jpg');
+	background-size:cover;
+
+}
+
+section#portfolio:after{
+	background: rgba(37,45,48,0.45);
+	content:"";
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	position: absolute;
+	z-index: 5;
+}
+
+section#portfolio .container{
+	padding:40px 0;
+	position: relative;
+	z-index:10;
+	color: black;
+}
+
+section#portfolio h2{
+	padding: 30px 0 30px 0;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252d30+0,252d30+100&1+0,0.75+100 */
+	background: -moz-linear-gradient(top,  rgba(37,45,48,1) 0%, rgba(37,45,48,0.45) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(37,45,48,1) 0%,rgba(37,45,48,0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(37,45,48,1) 0%,rgba(37,45,48,0.45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252d30', endColorstr='#bf252d30',GradientType=0 ); /* IE6-9 */
+}
+
+/* Bootsrap carousel items */
+
+.item{
+	background:rgba(256,256,256,0.55);
+	padding:50px;
+}
+
+.item img{
+	width:100%;
+	height:auto;
+
+}
+
+.item .overlay{
+	background-color: rgba(255,255,255,0.75);
+	padding:25px 50px;
+	border-radius:5px;
+	min-height: 350px;
+}
+
+.item .website_logo{
+	height:60px;
+	width:auto;
+	display:block;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+.item .btn{
+	margin:60px 0 30px 0;
+}
+
+.carousel-indicators
+{
+	position: absolute;
+	bottom:0px;
+}
+footer#contact_footer{
+	background-color:rgb(37,45,48);
+	height:auto;
+	width:100%;
+	font-size:20px;
+	color:white;
+	padding:30px;
+}
+footer#contact_footer i{
+	margin-right:10px;
+}
+
+footer#contact_footer a{
+	color:inherit;
+}
+@media only screen and (min-width : 768px) {
+	.emailadd{
+		text-align: right;
+		float:right;
+		clear:none;
+	}
+
+	.phoneno{
+		float:left;
+		clear:none;
+	}
+}
+
+
+@media only screen and (max-width : 992px) {
+	header img.me{
+		right:15px;
+		top:15px;
+	}
+}
+
+@media only screen and (max-width : 550px) {
+	header img.me{
+		right:20%;
+		top:25px;
+		width:80px;
+	}
+
+	.carousel .item .overlay{
+		padding:5px;
+	}
+
+	.carousel .item img{
+		width:100%;
+		height:auto;
+	}
+
+	footer#contact_footer{
+		height:auto !important;
+	}
+
+	footer#contact_footer p.phoneno{
+		font-size:22px !important;
+	}
+
+	footer#contact_footer p.emailadd{
+		font-size:14px !important;
+	}
+}
+
+@media only screen and (max-width : 435px) {
+	h1{
+		font-size:6vw;
+	}
+
+	h2{
+		font-size:5vw;
+	}
+
+	header ul#mobile_menu li{
+		margin:-7px;
+		letter-spacing: 0px;
+	}
+}
